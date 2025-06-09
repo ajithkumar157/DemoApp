@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: ./FrontEnd
+    ports:
+      - "80:80"
+    container_name: registration-frontend
+
+  backend:
+    build:
+      context: ./BackEnd
+    ports:
+      - "8081:8081"
+    container_name: registration-backend
