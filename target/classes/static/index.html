@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My First HTML Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="scripts.js"></script>
+    <h1>Welcom to Course Registration</h1>
+</head>
+<body>
+<h2>Enter Student Details</h2>
+<input type="text" id="name" placeholder="Enter name">
+<input type="email" id="email" placeholder="Enter email">
+
+<!-- Replace text input with a dropdown -->
+<select id="technology">
+    <option value="Java">Java</option>
+    <option value="Python">Python</option>
+    <option value="JavaScript">Web Development</option>
+    <option value="C++">C++</option>
+</select>
+
+<button onclick="enterDetails()">Submit Student</button>
+
+
+<h2>Available Courses</h2>
+<table id="coursesTable">
+    <tr>
+        <th>Course Name</th>
+        <th>Duration</th>
+    </tr>
+</table>
+<button onclick="courseAvailable()">Refresh Courses</button>
+
+<h2>Enrolled Students</h2>
+<table id="enrolledStudentsTable">
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Technology</th>
+    </tr>
+</table>
+<button onclick="fetchEnrolledStudents()">Refresh Enrolled Students</button>
+
+</body>
+</html>
